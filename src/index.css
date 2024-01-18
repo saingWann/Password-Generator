@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+@media (max-width: 1024px) {
+  html {
+    cursor: auto;
+  }
+}
+
+.password-length-slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 200px;
+  background-color: transparent;
+  &:focus {
+    outline-color: #f8b195;
+  }
+}
+
+.password-length-slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 13px;
+  background: #10b981;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(77, 201, 249) 0%,
+    rgb(5, 192, 161) 50%,
+    rgb(54, 138, 212) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgb(77, 201, 249) 0%,
+    rgb(5, 192, 161) 50%,
+    rgb(54, 138, 212) 100%
+  );
+}
+
+.password-length-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 8px;
+  background: #10b981;
+  background-size: 50%;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+/* number input styling */
+
+.password-length-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+  color: white;
+  width: 50px;
+  background-color: transparent;
+  &:focus {
+    outline-color: #ffffff;
+  }
+}
+
+.password-length-input {
+  background-color: #10b981;
+  padding: 4px 2px;
+  border-radius: 20px;
+
+  &:focus {
+    border: red 1px solid;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* input checkbox */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1em;
+  border-radius: 1rem;
+  border: 1px solid #10b981;
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 1rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #10b981;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+label:hover {
+  cursor: none;
+}
