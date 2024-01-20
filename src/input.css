@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;800&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,11 +42,12 @@ html{
     appearance: none;
     width: 200px;
     background-color: transparent;
-    &:focus {
-        outline-color: #f8b195;
-      }
+   
 }
 
+.password-length-slider:focus {
+  outline-color: #f8b195;
+}
 .password-length-slider::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     appearance: none;
@@ -77,13 +82,14 @@ html{
     background-size: 50%;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
     cursor: grab;
-      
-      &:active {
-        cursor: grabbing;
-      }
+
 
   }
 
+        
+  .password-length-slider::-webkit-slider-thumb:active {
+    cursor: grabbing;
+  }
   /* number input styling */
 
   .password-length-input{
@@ -94,20 +100,23 @@ html{
     color: white;
     width: 50px;
     background-color: transparent;
-    &:focus {
-        outline-color: #ffffff;
-      }
+ 
     
 }
 
+.password-length-input:focus {
+  outline-color: #ffffff;
+}
 .password-length-input{
     background-color: #10b981;
     padding: 4px 2px;
     border-radius: 20px;
 
-    &:focus {
-        border: red 1px solid;
-    }
+   
+}
+
+.password-length-inpu:focus {
+  border: red 1px solid;
 }
 
 input[type=number]::-webkit-inner-spin-button,

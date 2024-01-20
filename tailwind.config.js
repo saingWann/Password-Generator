@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      lineHeight: {
+        'extra-loose': '3',
+        '12': '3rem'},
+      fontFamily: {
+        'primary':['Sora', 'sans-serif']
+      }
+    },
+
   },
   plugins: [],
 }

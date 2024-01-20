@@ -1,4 +1,4 @@
-import { allCheckBoxEle, checkboxWrapper } from "./listener.ts";
+import { checkboxWrapper } from "./listener.ts";
 import {
   generatedResultEle,
   passwordLengtSliderEle,

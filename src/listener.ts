@@ -87,10 +87,12 @@ export const inputHandler = (inputType: string) => {
 
 export const sliderHandler = () => {
   passwordLengthInputEle.value = passwordLengtSliderEle.value;
+  generateNow(Number(passwordLengthInputEle.value));
 };
 
 export const lengthInputHandler = () => {
   passwordLengtSliderEle.value = passwordLengthInputEle.value;
+  generateNow(Number(passwordLengthInputEle.value));
 };
 
 // copy generate password

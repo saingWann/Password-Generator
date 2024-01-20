@@ -23,12 +23,10 @@ class App {
     });
 
     passwordLengtSliderEle.oninput = () => {
-      generateNow(Number(passwordLengtSliderEle.value));
       sliderHandler();
     };
 
     passwordLengthInputEle.oninput = () => {
-      generateNow(Number(passwordLengthInputEle.value));
       lengthInputHandler();
     };
 
@@ -76,7 +74,7 @@ window.onmousemove = (e: MouseEvent) => {
 };
 
 let resizeTimer: any;
-window.onresize = (e: UIEvent) => {
+window.onresize = () => {
   clearInterval(resizeTimer);
   resizeTimer = setTimeout(() => {
     cursor.style.transform = `translate(${window.innerWidth / 2}px)`;
@@ -84,7 +82,7 @@ window.onresize = (e: UIEvent) => {
 };
 
 let scrollTimer: any;
-window.onscroll = (e: Event) => {
+window.onscroll = () => {
   clearInterval(scrollTimer);
 
   scrollTimer = setTimeout(() => {
