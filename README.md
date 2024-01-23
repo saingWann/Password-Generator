@@ -29,9 +29,17 @@ to customize password settings and enhance the overall security of your accounts
 - [Node.js](https://nodejs.org/) installed on your machine.
 - Git clone or download the repository.
 
-### Installation
+# Usage
 
-1. Clone the repository:
+To use the Password Generator application, follow the steps below:
+
+1. **Clone the Repository:**
+   - Open your terminal and run the following command to clone the repository:
 
    ```bash
    git clone https://github.com/your-username/password-generator.git
+   cd password-generator
+   npm install
+   npm run start
+
+
