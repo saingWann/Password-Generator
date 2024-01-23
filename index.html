@@ -10,8 +10,18 @@
   </head>
   <body>
     <header class="shadow-md">
-      <nav class="padding-x py-7 flex justify-between items-center">
-        <a href="#" class="font-bold uppercase text-3xl font">Day.pg</a>
+      <nav class="padding-x py-3 lg:py-7 flex justify-between items-center">
+        <a
+          href="#"
+          class="font-bold uppercase text-3xl font flex gap-2 items-center"
+        >
+          <img
+            class="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]"
+            src="./assets/lgogo.png"
+            alt="logo.png"
+          />
+          <p class="lg:text-base text-xs">Day.pg</p></a
+        >
         <span class="flex gap-3 justify-center items-center">
           <svg
             width="30px"
@@ -88,9 +98,7 @@
           </g>
         </svg>
       </div>
-      <div
-        class="text-center pt-6 animate-bounce font-bold flex flex-col items-center"
-      >
+      <div class="text-center pt-6 font-bold flex flex-col items-center">
         <a class="pb-2 max-sm:text-xs" href="#generator">
           Creat a unique & secure password</a
         >
@@ -610,7 +618,9 @@
     </section>
 
     <footer>
-      <div class="text-center bg-gray-800/60 text-white p-3 font-bold relative">
+      <div
+        class="text-center bg-gray-800/60 text-white max-sm:text-xs p-3 font-bold relative"
+      >
         We do not store any passwords.
         <a
           scrollTop
@@ -654,7 +664,7 @@
         </a>
       </div>
       <div
-        class="bg-gray-900 p-5 max-sm:text-xs text-sm padding-x text-white flex justify-between items-center"
+        class="bg-gray-900 p-5 max-sm:text-xs text-sm padding-x text-white flex max-sm:flex-col justify-between max-sm:gap-3 items-center"
       >
         <p>Copyright © 2024</p>
         <span>code by Day.webdev</span>

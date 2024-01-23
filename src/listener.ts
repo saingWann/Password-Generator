@@ -23,7 +23,7 @@ export const checkboxWrapper = document.querySelector(
 export const allCheckBoxEle = checkboxWrapper.querySelectorAll("input");
 
 export const inputHandler = (inputType: string) => {
-  console.log("trigger");
+  // console.log("trigger");
   //   for lowecase
   if (inputType === "lowercase-input") {
     if (lowerCaseCheckBoxEle.checked) {
@@ -37,7 +37,7 @@ export const inputHandler = (inputType: string) => {
       const indexToRemove = passwordToGenerate.indexOf(lowerCase);
       passwordToGenerate.splice(indexToRemove, 1);
       generateNow(Number(passwordLengtSliderEle.value));
-      console.log(passwordToGenerate);
+      // console.log(passwordToGenerate);
     }
   }
 
@@ -46,13 +46,13 @@ export const inputHandler = (inputType: string) => {
     if (upperCaseCheckBoxEle.checked) {
       passwordToGenerate.push(upperCase);
       generateNow(Number(passwordLengtSliderEle.value));
-      console.log(passwordToGenerate);
+      // console.log(passwordToGenerate);
       return passwordToGenerate;
     } else {
       const indexToRemove = passwordToGenerate.indexOf(upperCase);
       passwordToGenerate.splice(indexToRemove, 1);
       generateNow(Number(passwordLengtSliderEle.value));
-      console.log(passwordToGenerate);
+      // console.log(passwordToGenerate);
     }
   }
 
@@ -81,7 +81,7 @@ export const inputHandler = (inputType: string) => {
       generateNow(Number(passwordLengtSliderEle.value));
     }
   }
-  console.log(passwordToGenerate);
+  // console.log(passwordToGenerate);
   return passwordToGenerate;
 };
 
@@ -98,12 +98,10 @@ export const lengthInputHandler = () => {
 // copy generate password
 export function copyText() {
   const textToCopy = generatedResultEle.innerText;
-  // tooltip.style.display = "block";
   tooltip.style.opacity = "1";
 
   setTimeout(() => {
     tooltip.style.opacity = "0";
-    // tooltip.style.display = "none";
   }, 2500);
   navigator.clipboard
     .writeText(textToCopy)

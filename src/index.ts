@@ -38,14 +38,14 @@ class App {
       copyText();
     };
 
-    console.log("event listen");
+    // console.log("event listen");
   }
 
   init() {
     this.listener();
     generateNow(Number(passwordLengtSliderEle.value));
     // generateNow(Number(passwordLengtSliderEle.value));
-    console.log("app is starting");
+    // console.log("app is starting");
   }
 }
 
