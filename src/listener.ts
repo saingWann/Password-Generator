@@ -29,9 +29,9 @@ export const inputHandler = (inputType: string) => {
     if (lowerCaseCheckBoxEle.checked) {
       passwordToGenerate.push(lowerCase);
       generateNow(Number(passwordLengtSliderEle.value));
-      console.log(passwordLengtSliderEle.value);
-      console.log("from lowercase checked");
-      console.log(passwordToGenerate);
+      // console.log(passwordLengtSliderEle.value);
+      // console.log("from lowercase checked");
+      // console.log(passwordToGenerate);
       return passwordToGenerate;
     } else {
       const indexToRemove = passwordToGenerate.indexOf(lowerCase);

@@ -61,11 +61,9 @@ window.onmousemove = (e: MouseEvent) => {
 
   const mouseX = e.clientX + scrollX;
   const mouseY = e.clientY + scrollY;
-
   if (Math.abs(e.movementX) + Math.abs(e.movementY) > 4) {
     rad = Math.atan2(e.movementX, -e.movementY);
   }
-
   cursor.style.transform = `translate(${mouseX - 8}px, ${
     mouseY - 92
   }px) rotate(${rad}rad)`;

@@ -22,6 +22,10 @@
     .padding-b{
         @apply sm:pb-24 pb-12
     }
+
+    .padding-t{
+      @apply sm:pt-24 pt-12
+  }
 }
 
 html{
